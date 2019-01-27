@@ -1,0 +1,26 @@
+{
+  "name": "the-minimal-example-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiroppy/the-minimal-example-graphql.git"
+  },
+  "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiroppy/the-minimal-example-graphql/issues"
+  },
+  "homepage": "https://github.com/hiroppy/the-minimal-example-graphql#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4"
+  }
+}

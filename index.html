@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="orgs">Loading...</div>
+    <script>
+      (async () => {
+        const res = await fetch('/graphql', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query: `{
+              organizations {
+                name
+              }
+            }`
+          }),
+        }).then(res => res.json());
+
+        const { organizations } = res.data;
+        const dom = document.querySelector('#orgs');
+        dom.textContent = organizations.map((org) => org.name).join(', ');
+      })();
+    </script>
+  </body>
+</html>
